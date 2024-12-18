@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="html-page">
+
+    <header>
+        <h1>HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Learn About HTML Elements</h2>
+        <section id="html-elements">
+            <ul>
+                <li>
+                    <strong>&lt;html&gt;</strong>: The root element of an HTML document.
+                    <div class="example">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;head&gt;</strong>: Contains metadata about the document.
+                    <div class="example">&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;title&gt;</strong>: Sets the title of the document.
+                    <div class="example">&lt;title&gt;My Awesome Page&lt;/title&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;body&gt;</strong>: Contains the content of the document.
+                    <div class="example">&lt;body&gt;&lt;h1&gt;Welcome!&lt;/h1&gt;&lt;/body&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;h1&gt; - &lt;h6&gt;</strong>: Represents headings of different levels.
+                    <div class="example">&lt;h1&gt;Main Heading&lt;/h1&gt;&lt;h2&gt;Subheading&lt;/h2&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;p&gt;</strong>: Represents a paragraph of text.
+                    <div class="example">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;a&gt;</strong>: Defines a hyperlink.
+                    <div class="example">&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;img&gt;</strong>: Embeds an image.
+                    <div class="example">&lt;img src="image.jpg" alt="Description"&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;ul&gt;</strong>: Creates an unordered list.
+                    <div class="example">&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;ol&gt;</strong>: Creates an ordered list.
+                    <div class="example">&lt;ol&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;/ol&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;li&gt;</strong>: Represents an item in a list.
+                    <div class="example">&lt;li&gt;List item&lt;/li&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;div&gt;</strong>: Defines a block-level container.
+                    <div class="example">&lt;div&gt;&lt;p&gt;Content inside a div.&lt;/p&gt;&lt;/div&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;span&gt;</strong>: Defines an inline container.
+                    <div class="example">&lt;p&gt;This is a &lt;span style="color: red;"&gt;red&lt;/span&gt; word.&lt;/p&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;input&gt;</strong>: Creates an input field.
+                    <div class="example">&lt;input type="text" placeholder="Enter your name"&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;form&gt;</strong>: Defines a form for user input.
+                    <div class="example">&lt;form action="/submit"&gt;&lt;input type="text" name="username"&gt;&lt;button type="submit"&gt;Submit&lt;/button&gt;&lt;/form&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;button&gt;</strong>: Creates a clickable button.
+                    <div class="example">&lt;button&gt;Click Me&lt;/button&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;table&gt;</strong>: Defines a table structure.
+                    <div class="example">&lt;table&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;th&gt;</strong>: Defines a header cell in a table.
+                    <div class="example">&lt;th&gt;Column Name&lt;/th&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;td&gt;</strong>: Defines a cell in a table.
+                    <div class="example">&lt;td&gt;Table Data&lt;/td&gt;</div>
+                </li>
+                <li>
+                    <strong>&lt;script&gt;</strong>: Embeds or references JavaScript code.
+                    <div class="example">&lt;script&gt;alert('Hello, World!');&lt;/script&gt;</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="notes-section">
+
+            <div id="admin-notes" style="display: none;">
+                <textarea id="note-input" placeholder="Write your note here..."></textarea>
+                <button id="save-note">Save Note</button>
+            </div>
+
+            <div id="notes-display">
+                <h4>Posted Notes:</h4>
+                <ul id="notes-list"></ul>
+            </div>
+        </section>
+        
+    </main>
+
+    <button id="scroll-top" class="scroll-top">↑</button>
+
+    <footer>
+        <p>&copy; 2024 Tyler Landry</p>
+    </footer>
+</body>
+</html>

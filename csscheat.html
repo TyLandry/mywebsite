@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="css-page">
+    <header>
+        <h1>CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CSS Features</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Definition</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Selectors</strong></td>
+                    <td><em>Used to target HTML elements for styling.</em></td>
+                    <td><pre><code>p { color: red; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Classes and IDs</strong></td>
+                    <td><em>Target specific elements.</em></td>
+                    <td><pre><code>.class-name { font-size: 16px; }<br>#id-name { margin: 10px; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Flexbox</strong></td>
+                    <td><em>A layout model for aligning elements.</em></td>
+                    <td><pre><code>div { display: flex; justify-content: center; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Grid</strong></td>
+                    <td><em>A two-dimensional layout system.</em></td>
+                    <td><pre><code>div { display: grid; grid-template-columns: 1fr 2fr; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Media Queries</strong></td>
+                    <td><em>Used for responsive design.</em></td>
+                    <td><pre><code>@media (max-width: 600px) { body { background-color: lightblue; } }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Pseudo-classes</strong></td>
+                    <td><em>Apply styles to elements based on their state.</em></td>
+                    <td><pre><code>a:hover { color: green; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Transitions</strong></td>
+                    <td><em>Enable animations between states.</em></td>
+                    <td><pre><code>button { transition: background-color 0.3s; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Positioning</strong></td>
+                    <td><em>Specifies the positioning of elements.</em></td>
+                    <td><pre><code>div { position: absolute; top: 50px; left: 100px; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Box Model</strong></td>
+                    <td><em>Defines how padding, borders, and margins affect an element's size.</em></td>
+                    <td><pre><code>div { margin: 10px; padding: 5px; border: 1px solid black; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Variables</strong></td>
+                    <td><em>Custom properties for reusable values.</em></td>
+                    <td><pre><code>:root { --main-color: #ff5733; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Hover Effects</strong></td>
+                    <td><em>Apply styles when the user hovers over an element.</em></td>
+                    <td><pre><code>button:hover { background-color: blue; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Background Properties</strong></td>
+                    <td><em>Set background colors, images, and gradients.</em></td>
+                    <td><pre><code>div { background: linear-gradient(to right, red, yellow); }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Clip Path</strong></td>
+                    <td><em>Defines a clipping region for an element.</em></td>
+                    <td><pre><code>div { clip-path: circle(50%); }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Filter</strong></td>
+                    <td><em>Applies graphical effects like blur or grayscale.</em></td>
+                    <td><pre><code>img { filter: grayscale(100%); }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Aspect Ratio</strong></td>
+                    <td><em>Defines a preferred aspect ratio for an element.</em></td>
+                    <td><pre><code>div { aspect-ratio: 16 / 9; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Content Overflow</strong></td>
+                    <td><em>Handles content that overflows its container.</em></td>
+                    <td><pre><code>div { overflow: hidden; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Custom Fonts</strong></td>
+                    <td><em>Use external font resources.</em></td>
+                    <td><pre><code>@font-face { font-family: 'MyFont'; src: url('myfont.woff2'); }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Cursor Property</strong></td>
+                    <td><em>Changes the appearance of the cursor.</em></td>
+                    <td><pre><code>a { cursor: pointer; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Outline</strong></td>
+                    <td><em>Styles the outline of an element.</em></td>
+                    <td><pre><code>button { outline: 2px solid red; }</code></pre></td>
+                </tr>
+                <tr>
+                    <td><strong>Alignment</strong></td>
+                    <td><em>Aligns text or elements.</em></td>
+                    <td><pre><code>p { text-align: center; }</code></pre></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="notes-section">
+
+            <div id="admin-notes" style="display: none;">
+                <textarea id="note-input" placeholder="Write your note here..."></textarea>
+                <button id="save-note">Save Note</button>
+            </div>
+
+            <div id="notes-display">
+                <h4>Posted Notes:</h4>
+                <ul id="notes-list"></ul>
+            </div>
+        </section>
+        
+    </main>
+
+    <button id="scroll-top" class="scroll-top">↑</button>
+
+    <footer>
+        <p>&copy; 2024 Tyler Landry</p>
+    </footer>
+</body>
+</html>

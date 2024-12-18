@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="js-page">
+    <header>
+        <h1>JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>JavaScript Basics</h2>
+        
+        <section>
+            <h3>Variables</h3>
+            <p><strong>Definition:</strong> Variables are used to store data values.</p>
+            <pre><code>let name = 'John'; 
+const age = 30;</code></pre>
+        </section>
+
+        <section>
+            <h3>Functions</h3>
+            <p><strong>Definition:</strong> Reusable blocks of code used to perform a specific task.</p>
+            <pre><code>
+function greet() { 
+    return 'Hello!'; 
+}
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Events</h3>
+            <p><strong>Definition:</strong> React to user actions like clicks or keypresses.</p>
+            <pre><code>
+document.getElementById('btn').addEventListener('click', () => alert('Clicked!'));
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>DOM Manipulation</h3>
+            <p><strong>Definition:</strong> Modify HTML content dynamically.</p>
+            <pre><code>
+document.getElementById('myDiv').innerText = 'Updated!';
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Arrays</h3>
+            <p><strong>Definition:</strong> Store multiple values in a single variable.</p>
+            <pre><code>
+let numbers = [1, 2, 3];
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Objects</h3>
+            <p><strong>Definition:</strong> Collections of key-value pairs.</p>
+            <pre><code>
+let person = { 
+    name: 'John', 
+    age: 30 
+};
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Loops</h3>
+            <p><strong>Definition:</strong> Execute code repeatedly.</p>
+            <pre><code>
+for (let i = 0; i < 5; i++) { 
+    console.log(i); 
+}
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Promises</h3>
+            <p><strong>Definition:</strong> Handle asynchronous operations.</p>
+            <pre><code>
+fetch('url')
+    .then(response => response.json())
+    .then(data => console.log(data));
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Classes</h3>
+            <p><strong>Definition:</strong> Templates for creating objects.</p>
+            <pre><code>
+class Car { 
+    constructor(brand) { 
+        this.brand = brand; 
+    } 
+}
+            </code></pre>
+        </section>
+
+        <section>
+            <h3>Local Storage</h3>
+            <p><strong>Definition:</strong> Store data locally in the browser.</p>
+            <pre><code>
+localStorage.setItem('key', 'value');
+            </code></pre>
+        </section>
+
+        <section id="notes-section">
+
+            <div id="admin-notes" style="display: none;">
+                <textarea id="note-input" placeholder="Write your note here..."></textarea>
+                <button id="save-note">Save Note</button>
+            </div>
+
+            <div id="notes-display">
+                <h4>Posted Notes:</h4>
+                <ul id="notes-list"></ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Tyler Landry</p>
+    </footer>
+</body>
+</html>
